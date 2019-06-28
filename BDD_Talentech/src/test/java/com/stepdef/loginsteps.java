@@ -38,7 +38,7 @@ public void my_password() throws Throwable {
 public void click_th_sign_in_buton() throws Throwable {
 	HomepageObjects.signInButton.click();
 
-}
+} 
 
 @Then("^I should be taken to my account$")
 public void i_should_be_taken_to_my_account() throws Throwable {
