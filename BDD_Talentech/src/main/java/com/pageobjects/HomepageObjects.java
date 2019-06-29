@@ -17,6 +17,19 @@ public class HomepageObjects {
 	
 	public static String PrintersURL= "https://demo.oscommerce.com/index.php?cPath=1_5";
 
+	public static String GalaxyTabletURL = "https://demo.oscommerce.com/product_info.php?products_id=28";
+	
+	public static String CartViewURL = "https://demo.oscommerce.com/shopping_cart.php";
+	
+	public static String DeliveryInformationURL = "https://demo.oscommerce.com/checkout_shipping.php";
+	
+	public static String OrderConfirmationURL= "https://demo.oscommerce.com/checkout_confirmation.php";
+	
+	
+	
+	
+	
+	
 	@FindBy
 	(id= "tdb3")
 	public static	WebElement myAccountButton;
@@ -45,6 +58,31 @@ public class HomepageObjects {
 	@FindBy
 	(xpath= "//*[@id=\"bodyContent\"]/div/div/table/tbody/tr[3]/td[1]/a/img")
 	public static WebElement Printers; 
+	
+	@FindBy
+	(xpath = "//*[@id=\"storeLogo\"]/a/img")
+	public static WebElement OsCommerceLogo;
+	
+	@FindBy
+	(xpath = "//*[@id=\"bodyContent\"]/div/div[2]/table/tbody/tr[1]/td[1]/a[1]/img")
+	public static WebElement Galaxy;  
 	 
+	@FindBy
+	(xpath= "//*[@id=\"tdb5\"]/span[2]")
+	public static WebElement AddToCart;
+	
+	@FindBy
+	(xpath = "//*[@id=\"tdb6\"]/span[2]")
+	public static WebElement Checkout;
+	
+	@FindBy
+	(xpath = "//*[@id=\"tdb6\"]/span[2]")
+	public static WebElement Continue; 
+	
+	@FindBy
+	(xpath = "//*[@id=\"bodyContent\"]/form/div/div[4]/table[3]/tbody/tr/td[2]/input")
+	public static WebElement CreditCard;
+	
+	
 	
 }
